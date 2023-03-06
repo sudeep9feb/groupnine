@@ -1,20 +1,41 @@
+import { Box, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import React from 'react'
-
+import HomeIcon from '@mui/icons-material/Home';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import ForumIcon from '@mui/icons-material/Forum';
+import LogoutIcon from '@mui/icons-material/Logout';
 function Sidebar() {
     return (
-        <Box>
+        <Box
+            flex={1}
+            sx={{ display: { xs: "none", sm: "flex" } }}
+            marginLeft={"40px"}
+            marginTop={"10px"}
+        >
             <List disablePadding>
                 <ListItemButton>
                     <ListItemIcon>
-                        <SendIcon />
+                        <HomeIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Sent mail" />
+                    <ListItemText primary="Home" />
                 </ListItemButton>
                 <ListItemButton>
                     <ListItemIcon>
-                        <SendIcon />
+                        <ForumIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Sent mail" />
+                    <ListItemText primary="Tweets" />
+                </ListItemButton>
+                <ListItemButton>
+                    <ListItemIcon>
+                        <AccountBoxIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Profile" />
+                </ListItemButton>
+                <ListItemButton>
+                    <ListItemIcon>
+                        <LogoutIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Signout" />
                 </ListItemButton>
             </List>
         </Box>

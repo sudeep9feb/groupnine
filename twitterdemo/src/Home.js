@@ -8,12 +8,8 @@ import Sidebar from './Sidebar'
 function Home() {
     return (
         <Box
-            display={"flex"}
-            flexDirection="row"
-            margin={"40px"}
-            padding="10px"
         >
-            <Stack direction={"row"} spacing={3}>
+            <Stack direction={"row"} spacing={2}>
                 <Sidebar />
                 <MainContent />
                 <Rightbar />

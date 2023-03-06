@@ -1,8 +1,17 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 function Rightbar() {
     return (
-        <div>Rightbar</div>
+        <Box
+            flex={2}
+            sx={{
+                display: {
+                    xs: "none", sm: "none", md: "flex"
+                }
+            }}
+        >Rightbar
+        </Box>
     )
 }
 
