@@ -18,7 +18,9 @@ function ComposeTweet() {
                 style={{ width: "100%", borderRadius: "10px", minWidth: "300px" }}
             />
             <Button
-                variant='contained'>
+                variant='contained'
+                sx={{ borderRadius: "24px", maxWidth: "180px" }}
+            >
                 Tweet
             </Button>
         </Box>
